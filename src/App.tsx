@@ -1,8 +1,7 @@
-import React from 'react';
 import type { FC } from 'react';
-import { Button, ConfigProvider } from 'antd';
-
+import { ConfigProvider } from 'antd';
 import 'antd/dist/reset.css';
+import { Button } from '@components';
 
 const App: FC = () => (
   <ConfigProvider
@@ -11,7 +10,7 @@ const App: FC = () => (
         colorPrimary: '#00b96b',
       },
     }}>
-    <Button type='primary'>Button</Button>
+    <Button>Button</Button>
   </ConfigProvider>
 );
 
